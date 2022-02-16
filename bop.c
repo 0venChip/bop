@@ -1,14 +1,14 @@
 /**
- * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.
+ * Copyright (c) 2022 WIlliam Bianchi
  *
- * SPDX-License-Identifier: BSD-3-Clause
+ * SPDX-License-Identifier: Apache-2.0
  */
 
 #include "pico/stdlib.h"
 
 int main() {
 #ifndef PICO_DEFAULT_LED_PIN
-#warning blink example requires a board with a regular LED
+#warning bop requires a board with a regular LED
 #else
     const uint LED_PIN = PICO_DEFAULT_LED_PIN;
     gpio_init(LED_PIN);
